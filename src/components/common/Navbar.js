@@ -1,26 +1,32 @@
 import React from "react";
 import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 
-export default function Navbar() {
+const Navbar = () => {
   return (
-    <nav>
-      <ul className="NavbarList">
-        <li className="home listItems">
-          <a exact href="/">
-            Home
-          </a>
-        </li>
-        <li className="contact listItems">
-          <a href="/contact">Contact Me</a>
-        </li>
-
-        <li className="about listItems ">
-          <a href="/about">About Me</a>
-        </li>
-        <li className="portfolio listItems">
-          <a href="/portfolio">Portfolio</a>
-        </li>
-      </ul>
-    </nav>
+    <div>
+      <nav>
+        <ul className="NavbarList">
+          <li className="home listItems">
+            <NavLink exact to="/">
+              Home
+            </NavLink>
+          </li>
+          <li className="contact listItems">
+            <NavLink exact to="/contact">
+              Contact Me
+            </NavLink>
+          </li>
+          <li className="about listItems ">
+            <NavLink to="/about">About Me</NavLink>
+          </li>
+          <li className="portfolio listItems">
+            <NavLink to="/portfolio">Portfolio</NavLink>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
-}
+};
+
+export default Navbar;

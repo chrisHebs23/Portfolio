@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomePage.css";
 
-export default function HomePage(props) {
+export default function HomePage() {
   return (
     <div>
       <h1>Chris Heberden</h1>

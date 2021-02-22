@@ -1,18 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomePage from "../HomePage/HomePage";
 import Navbar from "../common/Navbar";
+import ContactPage from "../ContactPage/ContactPage";
+import AboutPage from "../AboutPage/About";
+import PortfolioPage from "../PortfolioPage/PortfolioPage";
 
-export default function App() {
+export default function App(props) {
   return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route exact path="/">
-          <HomePage />
-        </Route>
-      </Switch>
-    </Router>
+    <div>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route path="/contact">
+            <ContactPage />
+          </Route>
+          <Route path="/about">
+            <AboutPage />
+          </Route>
+          <Route path="/portfolio">
+            <PortfolioPage />
+          </Route>
+        </Switch>
+      </Router>
+    </div>
   );
 }
