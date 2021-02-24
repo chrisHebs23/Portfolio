@@ -1,0 +1,19 @@
+.me-picture {
+  grid-column: 1/4;
+  grid-row: 2/7;
+  width: 80%;
+  border-radius: 50%;
+}
+
+.about-title {
+  grid-column: 4/8;
+  grid-row: 1/2;
+  color: #46a29f;
+}
+
+.about-text {
+  grid-column: 4/10;
+  grid-row: 2/7;
+  font-size: 1.025rem;
+  text-align: left;
+}
