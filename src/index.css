@@ -1,6 +1,8 @@
 html,
 body {
   margin: 0;
-  font-size: 16px;
-  color: #fff;
+  padding: 0;
+  color: white;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
 }

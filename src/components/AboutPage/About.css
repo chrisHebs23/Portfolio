@@ -12,8 +12,9 @@
 }
 
 .about-text {
-  grid-column: 4/10;
+  grid-column: 4/11;
   grid-row: 2/7;
-  font-size: 1.025rem;
+  font-size: 1.17rem;
   text-align: left;
+  padding-top: 2%;
 }

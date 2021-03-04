@@ -1,0 +1,74 @@
+.navbar-container {
+  margin: 0;
+}
+.navbar {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: grid !important;
+  grid-template-columns: repeat(8, 12.5%) !important;
+  grid-template-rows: 1fr;
+}
+
+.navbar-brand {
+  grid-column: 4/6 !important;
+  grid-row: 1/2;
+  height: 2%;
+  overflow: visible !important;
+  z-index: -5 !important;
+  height: auto !important;
+  display: flex !important;
+  align-content: center !important;
+  justify-content: center !important;
+  margin: 0 !important;
+}
+.logo {
+  width: 30% !important;
+}
+
+#basic-navbar-nav {
+  width: 100% !important;
+  color: white !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center !important;
+  width: 100%;
+  grid-column: 1/9 !important;
+  grid-row: 1/2;
+  font-size: 0.85rem !important;
+}
+
+a.listStyle {
+  width: 100% !important;
+  color: white !important;
+  text-decoration: underline #66fcf1 !important;
+}
+
+.navbar-nav {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.home {
+  grid-column: 1/2 !important;
+  grid-row: auto;
+}
+.contact {
+  grid-column: 2/3 !important;
+}
+.portfolio {
+  grid-column: 8/9 !important;
+}
+.about {
+  grid-column: 7/8 !important;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .navbar-toggler-icon {
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    margin: 0 !important;
+  }
+}

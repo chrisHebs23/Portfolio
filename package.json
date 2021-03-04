@@ -11,11 +11,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "axios": "^0.21.1",
+    "emailjs-com": "^2.6.4",
+    "nuka-carousel": "^4.7.5",
     "react": "^17.0.1",
     "react-alice-carousel": "^2.4.0",
     "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-leaf-carousel": "^2.0.3",
     "react-router-dom": "^5.2.0",
-    "react-simple-image-slider": "^2.0.3"
+    "react-simple-card": "^2.0.2",
+    "react-simple-image-slider": "^2.0.3",
+    "react-text-loop": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.17",
@@ -29,7 +37,7 @@
     "css-loader": "^5.0.2",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.1.0",
-    "react-bootstrap": "^1.5.0",
+    "react-bootstrap": "^1.5.1",
     "style-loader": "^2.0.0",
     "webpack": "^5.23.0",
     "webpack-cli": "^4.5.0",

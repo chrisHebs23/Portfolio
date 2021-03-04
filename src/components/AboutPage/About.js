@@ -1,25 +1,38 @@
 import React from "react";
 import Me from "../../../public/me.jpg";
 import "./About.css";
+import { Helmet } from "react-helmet";
 
 export default function AboutPage() {
   return (
     <div className="layout">
-      <h1 className="about-title layout-align title">About Me</h1>
+      <Helmet>
+        <title>About Chris</title>
+        <style>{"body { background-color: #202833; }"}</style>
+      </Helmet>
+      <h1 className="about-title layout-align ">About Me</h1>
       <img className="me-picture layout-align" src={Me} />
       <p className="about-text layout-align">
-        I am a South African, who did most of my growing up on a tropical island
-        in The Indian Ocean. If I wasn't in the water or at school you could
-        often find me at the rugby field or behind my computer. I came to
-        America on a Rugby scholarship and like most of my friends had no clue
-        what I wanted to be. That was until I took a simple programming class in
-        my sophomore, and found what I enjoyed. This started me on my coding
-        journey. <br /> <br /> I am now out of College and teaching myself how
-        to become a Full Stack Web Developer. I am enjoying the process. I often
-        find myself getting lost in time when I a coding but that just goes to
-        show time does fly when you are having fun. <br />
-        <br />I am looking to begin my next chapter of my life and join a
-        company so that I can help them reach their goals as well as my own.
+        I am a Global citizen, born in South Africa grew up on a tropical island
+        in The Indian Ocean. If I wasn't in the water or at school, you could
+        often find me at the rugby field, where I earned national age group
+        colours and played in a number of international tournaments, or behind
+        my computer, where I discovered an ability and love for technology. I
+        was fortunate enough to attend college in the USA on a Rugby scholarship
+        with my focus on the sports field and not on my career. That was until I
+        took a simple programming class in my sophomore year and found what I
+        enjoy, what I eat breathe and sleep.
+        <br />
+        <br />I have started my coding journey and am looking to go much
+        further. I graduated from Notre Dame College cum laude and am completing
+        a Full Stack Web Developer course. I am enjoying every moment of this
+        development process. Time stands still when I am coding, but that just
+        shows that time does fly when you are having fun and challenging your
+        capabilities.
+        <br />
+        <br />I am looking to starting the next chapter of my life by being
+        invited to join a company to help them achieve their goals while I reach
+        towards my own.
       </p>
     </div>
   );
