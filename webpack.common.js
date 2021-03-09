@@ -11,6 +11,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(ROOT, "public/index.html"),
+      favicon: "./public/favicon.ico",
     }),
   ],
   module: {
@@ -31,6 +32,11 @@ module.exports = {
             loader: "file-loader",
           },
         ],
+      },
+      {
+        test: /\.ico$/,
+        exclude: /node_modules/,
+        loader: "file-loader",
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,

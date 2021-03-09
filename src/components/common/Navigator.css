@@ -39,10 +39,15 @@
   font-size: 0.85rem !important;
 }
 
-a.listStyle {
+.listStyle {
   width: 100% !important;
   color: white !important;
   text-decoration: underline #66fcf1 !important;
+}
+
+.active {
+  color: #66fcf1 !important;
+  text-decoration: underline white !important;
 }
 
 .navbar-nav {
@@ -64,11 +69,31 @@ a.listStyle {
   grid-column: 7/8 !important;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  .navbar-toggler-icon {
+@media only screen and (min-device-width: 320px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2) {
+  .navbar {
+    width: 100% !important;
     margin: 0 !important;
+    padding: 0 !important;
     display: flex !important;
-    justify-content: flex-end !important;
-    margin: 0 !important;
+    justify-content: center !important;
+    align-content: center !important;
+    font-size: 1rem !important;
+  }
+
+  .hamburger-button {
+    display: flex !important;
+    justify-content: center !important;
+    align-content: center !important;
+    width: 10% !important;
+  }
+
+  .navbar-brand {
+    display: flex !important;
+    justify-content: left !important;
+    align-content: center !important;
+  }
+
+  .navbar-toggler-icon {
+    width: 100% !important;
   }
 }

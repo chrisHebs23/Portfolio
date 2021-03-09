@@ -1,0 +1,83 @@
+.footer {
+  display: grid !important;
+  margin: 0 auto !important;
+  grid-template-columns: repeat(7, 1fr) !important;
+  grid-template-rows: 1fr 1fr !important;
+}
+.logos {
+  border-radius: 50%;
+  border: 1px solid #66fcf1;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background: transparent;
+  display: flex !important;
+  justify-self: center !important;
+  align-self: center !important;
+}
+
+.logos:hover {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.linked-logo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.linkedin {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.logo-img {
+  width: 100%;
+  height: auto;
+}
+
+.github-logo {
+  grid-column: 7/8;
+  grid-row: 1/2;
+}
+.github {
+  grid-column: 7/8;
+  grid-row: 2/3;
+}
+
+.text-align {
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 0;
+  display: flex !important;
+  justify-self: center !important;
+  align-self: flex-start !important;
+  color: #fff;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logos {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+/* Tablet landscape */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .logos {
+    width: 30%;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2) {
+  .logos {
+    width: 50%;
+    height: 100%;
+  }
+  .logo-img {
+    width: 100%;
+    height: auto;
+  }
+}

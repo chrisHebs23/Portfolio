@@ -6,6 +6,7 @@ import Navigator from "../common/Navigator";
 import ContactPage from "../ContactPage/ContactPage";
 import AboutPage from "../AboutPage/About";
 import PortfolioPage from "../PortfolioPage/PortfolioPage";
+import Footer from "../common/Footer";
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
             </Route>
           </Switch>
         </Router>
+        <Footer />
       </div>
     </div>
   );

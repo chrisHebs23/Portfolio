@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./ContactPage.css";
 import { Helmet } from "react-helmet";
@@ -17,9 +17,11 @@ export default function ContactPage() {
       .then(
         (result) => {
           console.log(result.text);
+          alert("Email Sent!");
         },
         (error) => {
           console.log(error.text);
+          alert("FAILED!" + error);
         }
       );
 
@@ -32,31 +34,40 @@ export default function ContactPage() {
         <title>Contact Chris</title>
         <style>{"body { background-color: #202833; }"}</style>
       </Helmet>
-      <h1 className="page-title layout-align title">Get in Touch</h1>
+      <h1 className="contact-title layout-align titles">Get in Touch</h1>
       <h2 className="contact-text layout-align">
-        Morse code is an option but there are simpler ways to get in touch with
-        me.
+        Morse code and smoke signals are options, but there is a simpler way to
+        get in touch with me:
       </h2>
       <form onSubmit={sendEmail} className="the-form">
-        <input className="name" typ="text" placeholder="Name" name="name" />
         <input
-          className="email-address"
+          className="name spacing"
+          typ="text"
+          placeholder="Name"
+          name="name"
+          required
+        />
+        <input
+          className="email-address spacing"
           type="email"
           placeholder="Email Address"
           name="email"
+          required
         />
         <input
-          className="purpose"
+          className="purpose spacing"
           typ="text"
           placeholder="Subject"
           name="subject"
+          required
         />
         <textarea
-          className="message"
+          className="message "
           placeholder="Your Message"
           name="message"
+          required
         />
-        <button className="the-submit">Send Message</button>
+        <button className="buttons the-submit">Send Message</button>
       </form>
     </div>
   );
