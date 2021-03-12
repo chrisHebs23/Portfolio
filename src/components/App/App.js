@@ -1,12 +1,23 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import HomePage from "../HomePage/HomePage";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
+// import HomePage from "../Home/HomePage";
+// import ContactPage from "../Contact/ContactPage";
+// import AboutPage from "../About/About";
+// import PortfolioPage from "../Portfolio/PortfolioPage";
 import Navigator from "../common/Navigator";
-import ContactPage from "../ContactPage/ContactPage";
-import AboutPage from "../AboutPage/About";
-import PortfolioPage from "../PortfolioPage/PortfolioPage";
 import Footer from "../common/Footer";
+import NotFoundPage from "../common/PageNotFound";
+
+const AboutPage = lazy(() => import("../About/About"));
+const ContactPage = lazy(() => import("../Contact/ContactPage"));
+const HomePage = lazy(() => import("../Home/HomePage"));
+const PortfolioPage = lazy(() => import("../Portfolio/PortfolioPage"));
 
 export default function App() {
   return (
@@ -14,22 +25,24 @@ export default function App() {
       <div className="container">
         <Router>
           <Navigator />
+
           <Switch>
-            <Route exact path="/">
-              <HomePage />
-            </Route>
-            <Route path="/contact">
-              <ContactPage />
-            </Route>
-            <Route path="/about">
-              <AboutPage />
-            </Route>
-            <Route path="/portfolio">
-              <PortfolioPage />
-            </Route>
+            <Suspense
+              fallback={<span style={{ color: "White" }}>Loading...</span>}
+            >
+              <Route exact path="/" component={HomePage} />
+
+              <Route exact path="/contact" component={ContactPage} />
+
+              <Route exact path="/about" component={AboutPage} />
+
+              <Route exact path="/portfolio" component={PortfolioPage} />
+            </Suspense>
+            <Route exact path="*" component={NotFoundPage} />
           </Switch>
+
+          <Footer />
         </Router>
-        <Footer />
       </div>
     </div>
   );

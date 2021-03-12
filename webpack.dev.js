@@ -2,7 +2,6 @@ const path = require("path");
 const fs = require("fs");
 const common = require("./webpack.common");
 const { merge } = require("webpack-merge");
-
 // root path for this project
 const ROOT = __dirname;
 

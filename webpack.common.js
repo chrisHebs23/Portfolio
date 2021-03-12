@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { SourceMapDevToolPlugin } = require("webpack");
 
 // root path for this project
 const ROOT = __dirname;
@@ -13,6 +14,9 @@ module.exports = {
       template: path.join(ROOT, "public/index.html"),
       favicon: "./public/favicon.ico",
     }),
+    new SourceMapDevToolPlugin({
+      filename: "[file].map",
+    }),
   ],
   module: {
     rules: [
@@ -20,6 +24,11 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         use: "babel-loader",
+      },
+      {
+        test: /\.js$/,
+        enforce: "pre",
+        use: ["source-map-loader"],
       },
       {
         test: /\.css$/i,

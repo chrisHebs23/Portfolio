@@ -2,7 +2,6 @@ import React, { Component, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import TextLoop from "react-text-loop";
 import { Helmet } from "react-helmet";
-import Footer from "../common/Footer";
 
 export default class HomePage extends Component {
   render() {

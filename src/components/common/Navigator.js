@@ -7,7 +7,6 @@ import { NavLink } from "react-router-dom";
 import logo from "../../../public/pictures/logo.png";
 
 export default function Navigator(props) {
-  const { location } = props;
   return (
     // <div collapseOnSelect className="navbar-container ">
     <Navbar expand="lg" variant="dark">
