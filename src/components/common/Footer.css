@@ -73,11 +73,12 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2) {
   .logos {
-    width: 50%;
+    width: 40%;
     height: 100%;
   }
   .logo-img {
-    width: 100%;
+    width: 90%;
     height: auto;
+    margin: 0 auto;
   }
 }
