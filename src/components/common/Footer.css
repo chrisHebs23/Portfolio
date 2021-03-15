@@ -1,8 +1,8 @@
 .footer {
   display: grid;
   margin: 0 auto;
-  grid-template-columns: repeat(7, 1fr) !important;
-  grid-template-rows: 1fr 1fr !important;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr 1fr;
 }
 .logos {
   border-radius: 50%;
@@ -11,9 +11,9 @@
   padding: 0;
   width: 25%;
   background: transparent;
-  display: flex !important;
-  justify-self: center !important;
-  align-self: center !important;
+  display: flex;
+  justify-self: center;
+  align-self: center;
 }
 
 .logos:hover {
@@ -65,16 +65,10 @@
 
 @media (max-width: 30rem) {
   .footer {
-    position: absolute;
+    margin-top: 15%;
   }
-
   .logos {
-    width: 60%;
-    height: 100%;
-  }
-  .logo-img {
-    width: 100%;
-    height: auto;
+    width: 55% !important;
     margin: 0 auto;
   }
 }

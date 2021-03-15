@@ -2,71 +2,71 @@
   margin: 0;
 }
 .navbar {
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   display: grid !important;
   grid-template-columns: repeat(8, 12.5%) !important;
   grid-template-rows: 1fr;
 }
 
 .navbar-brand {
-  grid-column: 4/6 !important;
+  grid-column: 4/6;
   grid-row: 1/2;
   height: 2%;
-  overflow: visible !important;
-  z-index: -5 !important;
-  height: auto !important;
-  display: flex !important;
-  align-content: center !important;
-  justify-content: center !important;
-  margin: 0 !important;
+  overflow: visible;
+  z-index: -5;
+  height: auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 0;
 }
 .logo {
   width: 30% !important;
 }
 
 #basic-navbar-nav {
-  width: 100% !important;
-  color: white !important;
-  list-style: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  text-align: center !important;
   width: 100%;
-  grid-column: 1/9 !important;
+  color: white;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  grid-column: 1/9;
   grid-row: 1/2;
-  font-size: 0.85rem !important;
+  font-size: 0.85rem;
 }
 
 .listStyle {
-  width: 100% !important;
-  color: white !important;
-  text-decoration: underline #66fcf1 !important;
+  width: 100%;
+  color: white;
+  text-decoration: underline #66fcf1;
 }
 
 .active {
-  color: #66fcf1 !important;
-  text-decoration: underline white !important;
+  color: #66fcf1;
+  text-decoration: underline white;
 }
 
 .navbar-nav {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
 }
 
 .home {
-  grid-column: 1/2 !important;
+  grid-column: 1/2;
   grid-row: auto;
 }
 .contact {
-  grid-column: 2/3 !important;
+  grid-column: 2/3;
 }
 .portfolio {
-  grid-column: 8/9 !important;
+  grid-column: 8/9;
 }
 .about {
-  grid-column: 7/8 !important;
+  grid-column: 7/8;
 }
 
 @media (max-width: 48rem) {
@@ -89,19 +89,19 @@
 
   .hamburger-button {
     display: flex !important;
-    justify-content: center !important;
-    align-content: center !important;
+    justify-content: center;
+    align-content: center;
     width: 12% !important;
   }
 
   .navbar-brand {
     display: flex !important;
-    justify-content: left !important;
-    align-content: center !important;
+    justify-content: left;
+    align-content: center;
     width: 55%;
   }
 
   .navbar-toggler-icon {
-    width: 100% !important;
+    width: 100%;
   }
 }
