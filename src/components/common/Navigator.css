@@ -18,11 +18,11 @@
   display: flex;
   align-content: center;
   justify-content: center;
-  margin: 0;
+  margin: 0 !important;
 }
 .logo {
-  width: 30%;
-  height: auto;
+  width: 30% !important;
+  height: 15% !important;
 }
 
 #basic-navbar-nav {
@@ -93,10 +93,6 @@
   .navbar-toggler-icon {
     width: 100%;
   }
-  .logo {
-    width: 32%;
-    height: 15% !important;
-  }
 }
 
 @media (max-width: 48rem) {
@@ -124,10 +120,6 @@
   .navbar-toggler-icon {
     width: 100%;
   }
-  .logo {
-    width: 32%;
-    height: 10% !important;
-  }
 }
 
 @media (max-width: 30rem) {
@@ -154,9 +146,5 @@
 
   .navbar-toggler-icon {
     width: 100%;
-  }
-  .logo {
-    width: 32%;
-    height: 10% !important;
   }
 }
