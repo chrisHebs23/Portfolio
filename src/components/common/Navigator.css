@@ -93,6 +93,10 @@
   .navbar-toggler-icon {
     width: 100%;
   }
+  .logo {
+    width: 32%;
+    height: 15%;
+  }
 }
 
 @media (max-width: 48rem) {
@@ -119,6 +123,10 @@
 
   .navbar-toggler-icon {
     width: 100%;
+  }
+  .logo {
+    width: 32%;
+    height: 10%;
   }
 }
 
@@ -149,6 +157,6 @@
   }
   .logo {
     width: 32%;
-    height: min-content;
+    height: 10%;
   }
 }
