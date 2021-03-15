@@ -95,7 +95,7 @@
   }
   .logo {
     width: 32%;
-    height: 15%;
+    height: 15% !important;
   }
 }
 
@@ -126,7 +126,7 @@
   }
   .logo {
     width: 32%;
-    height: 10%;
+    height: 10% !important;
   }
 }
 
@@ -157,6 +157,6 @@
   }
   .logo {
     width: 32%;
-    height: 10%;
+    height: 10% !important;
   }
 }
