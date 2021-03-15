@@ -15,7 +15,6 @@
   grid-row: 1/2;
   overflow: visible;
   z-index: -5;
-  height: auto;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -139,18 +138,16 @@
   }
 
   .navbar-brand {
-    display: flex !important;
     justify-content: left;
     align-content: center;
-    width: 70%;
-    margin: 0 !important;
+    width: 50%;
   }
 
   .navbar-toggler-icon {
     width: 100%;
   }
   .logo {
-    width: 30%;
-    height: auto;
+    width: 32%;
+    height: min-content;
   }
 }
