@@ -105,14 +105,6 @@ h1 {
 /* 
   ##Device = Tablets, Ipads (landscape)
  */
-@media (min-width: 62rem) and (max-width: 64rem) {
-  .title {
-    grid-column: 3/8;
-    grid-row: 1/6;
-    color: #66fcf1;
-    font-size: 8.5rem;
-  }
-}
 
 @media (max-width: 48rem) {
   #App {
