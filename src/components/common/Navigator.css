@@ -19,7 +19,9 @@
   align-content: center;
   justify-content: center;
   margin: 0 !important;
+  padding: 0 !important;
 }
+
 .logo {
   width: 30% !important;
   height: 15% !important;
