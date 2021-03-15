@@ -11,7 +11,7 @@ export default class HomePage extends Component {
           <title>Chris Heberden</title>
           <style>{"body { background-color: #0b0c10; }"}</style>
         </Helmet>
-        <h1 className="title layout-align">Chris Heberden</h1>
+        <h1 className="title layout-align">Chris Heberdens</h1>
         <TextLoop
           springConfig={{ stiffness: 180, damping: 8 }}
           interval={3000}
