@@ -127,7 +127,7 @@
   .carousel-layout {
     height: 100%;
     grid-column: 1/6;
-    grid-row: 2/8;
+    grid-row: 3/10;
   }
 
   .cardStyle {
@@ -140,19 +140,19 @@
   .slider-control-centerleft {
     margin-top: 3% 0 !important;
     font-size: 1.2rem !important;
-    top: 76% !important;
+    top: 71% !important;
     width: 20% !important;
     margin: 5% 0 !important;
   }
 
   .slider-control-bottomcenter {
-    bottom: 11% !important;
+    bottom: 32% !important;
   }
 }
 /* Smartphones */
 @media (max-width: 30rem) {
   .portfolio-title {
-    grid-column: 1/5;
+    grid-column: 1/3;
     grid-row: 1/2;
     color: #46a29f;
     font-size: 6rem;
@@ -161,8 +161,8 @@
   .carousel-layout {
     overflow: hidden;
     height: 100%;
-    grid-column: 1/3 !important;
-    grid-row: 3/9 !important;
+    grid-column: 1/3;
+    grid-row: 2/11;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -221,10 +221,9 @@
 
   .slider-control-centerright,
   .slider-control-centerleft {
-    margin-top: 3% 0 !important;
-    font-size: 1.2rem !important;
-    top: 75% !important;
-    width: 20% !important;
+    font-size: 1rem !important;
+    top: 68% !important;
+    width: 22% !important;
     margin: 5% 0 !important;
   }
 
@@ -245,7 +244,7 @@
   }
 
   .slider-control-bottomcenter {
-    bottom: 12% !important;
+    bottom: 39% !important;
   }
 
   button {

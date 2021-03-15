@@ -31,15 +31,15 @@
 
   .me-picture {
     grid-column: 1/4;
-    grid-row: 2/6;
-    width: 80%;
+    grid-row: 1/12;
+    width: 90%;
     border-radius: 50%;
   }
 
   .about-text {
     grid-column: 4/10;
-    grid-row: 2/6;
-    font-size: 1.2rem;
+    grid-row: 1/12;
+    font-size: 1.7rem;
     text-align: left;
   }
 }

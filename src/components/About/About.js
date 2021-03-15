@@ -9,11 +9,6 @@ export default function AboutPage() {
       <Helmet>
         <title>About Chris</title>
         <style>{"body { background-color: #202833; }"}</style>
-        <style>{".github-logo,.github { grid-column: 2/3; }"}</style>
-        <style>
-          {`@media (max-width: 30rem) {
-            .github-logo,.github { grid-column: 7/8 }} `}
-        </style>
       </Helmet>
       <h1 className="about-title layout-align titles ">About Me</h1>
       <img className="me-picture layout-align" src={Me} />
