@@ -11,7 +11,7 @@ export default function AboutPage() {
         <style>{"body { background-color: #202833; }"}</style>
         <style>{".github-logo,.github { grid-column: 2/3; }"}</style>
         <style>
-          {`@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+          {`@media (max-width: 30rem) {
             .github-logo,.github { grid-column: 7/8 }} `}
         </style>
       </Helmet>
