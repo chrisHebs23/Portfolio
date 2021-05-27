@@ -1,18 +1,10 @@
 import React, { lazy, Suspense } from "react";
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect,
-} from "react-router-dom";
-// import HomePage from "../Home/HomePage";
-// import ContactPage from "../Contact/ContactPage";
-// import AboutPage from "../About/About";
-// import PortfolioPage from "../Portfolio/PortfolioPage";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navigator from "../common/Navigator";
 import Footer from "../common/Footer";
 import NotFoundPage from "../common/PageNotFound";
+import "./App.css";
 
 const AboutPage = lazy(() => import("../About/About"));
 const ContactPage = lazy(() => import("../Contact/ContactPage"));
@@ -28,7 +20,11 @@ export default function App() {
 
           <Switch>
             <Suspense
-              fallback={<span style={{ color: "White" }}>Loading...</span>}
+              fallback={
+                <span style={{ backgroundColor: "#0B0C10", color: "white" }}>
+                  Loading...
+                </span>
+              }
             >
               <Route exact path="/" component={HomePage} />
 
