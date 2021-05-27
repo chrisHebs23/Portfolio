@@ -13,11 +13,7 @@ const PortfolioRepos = (props) => {
             <p className="card-description card-align">{repo.description}</p>
             <p className="card-language card-align">{repo.language}</p>
             <button className="buttons card-button card-align">
-              <a
-                className="card-link"
-                href={` https://chrishebs23.github.io/${repo.name}`}
-                target="_blank"
-              >
+              <a className="card-link" href={repo.homepage} target="_blank">
                 Visit
               </a>
             </button>

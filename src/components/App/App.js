@@ -36,7 +36,6 @@ export default function App() {
             </Suspense>
             <Route exact path="*" component={NotFoundPage} />
           </Switch>
-
           <Footer />
         </Router>
       </div>
